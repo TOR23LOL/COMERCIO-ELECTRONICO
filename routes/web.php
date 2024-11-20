@@ -14,8 +14,9 @@ use App\Http\Controllers\InformacionController;
 |
 */
 
-Route::get('/', [InformacionController::class, '']);
+//Route::get('/', [InformacionController::class, '']);
 
+//RUTAS DEL LOGIN
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
