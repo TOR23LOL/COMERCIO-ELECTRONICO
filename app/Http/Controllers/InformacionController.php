@@ -7,5 +7,5 @@ use App\Models\Informacion;
 
 class InformacionController extends Controller
 {
-    //
+    
 }
