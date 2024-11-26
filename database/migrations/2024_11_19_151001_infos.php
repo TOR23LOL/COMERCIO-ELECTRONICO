@@ -19,6 +19,7 @@ class Infos extends Migration
             $table->string('subtitulo');
             $table->string('parrafo');
             $table->string('image');
+            $table->enum('status',['ACTIVE','DEACTIVATE'])->default('ACTIVE');
             $table->timestamps();
         });
     }

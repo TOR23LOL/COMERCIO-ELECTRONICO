@@ -18,6 +18,7 @@ class Redes extends Migration
             $table->string('nombre');
             $table->string('link');
             $table->string('iconos');
+            $table->enum('status',['ACTIVE','DEACTIVATE'])->default('ACTIVE');
             $table->timestamps();
         });
     }

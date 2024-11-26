@@ -19,6 +19,7 @@ class Contactos extends Migration
             $table->string('telefono');
             $table->string('correo');
             $table->string('imagen');
+            $table->enum('status',['ACTIVE','DEACTIVATE'])->default('ACTIVE');
             $table->timestamps();
         });
     }
